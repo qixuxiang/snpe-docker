@@ -36,7 +36,9 @@ RUN cd /tmp && unzip snpe-1.47.0.zip
 
 RUN apt-get update && apt-get install -y \
     python3-dev \
-    python-dev
+    python-dev \
+    adb \
+    vim
 
 RUN cd /tmp && \
     /bin/bash -c "source snpe-1.47.0.2501/bin/dependencies.sh" && \
